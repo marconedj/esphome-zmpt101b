@@ -8,7 +8,7 @@ sensor_ns = cg.esphome_ns.namespace('zmpt101b')
 Zmpt101bSensor = sensor_ns.class_('ZMPT101BSensor', cg.PollingComponent)
 
 CONFIG_SCHEMA = sensor.SENSOR_SCHEMA.extend({
-    cv.GenerateID(): cv.declare_id(Zmpt101bSensor)
+    cv.GenerateID(): cv.declare_id(Zmpt101bSensor),
     cv.Required("adc_pin"): cv.int_range(min=0, max=99),
 })
 
