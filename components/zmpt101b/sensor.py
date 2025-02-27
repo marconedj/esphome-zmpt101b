@@ -9,6 +9,7 @@ Zmpt101bSensor = sensor_ns.class_('ZMPT101BSensor', cg.PollingComponent)
 
 CONFIG_SCHEMA = sensor.SENSOR_SCHEMA.extend({
     cv.GenerateID(): cv.declare_id(Zmpt101bSensor)
+    cv.Required("adc_pin"): cv.int_range(min=0, max=99),
 })
 
 def to_code(config):
