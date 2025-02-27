@@ -1,5 +1,7 @@
 #include "zmpt101b.h"
 
+namespace esphome {
+namespace zmpt101b_ns {
 /// @brief ZMPT101B constructor
 /// @param pin analog pin that ZMPT101B connected to.
 /// @param frequency AC system frequency
@@ -61,4 +63,7 @@ float ZMPT101B::getRmsVoltage(uint8_t loopCount)
 	}
 
 	return readingVoltage / loopCount;
+}
+
+}
 }

@@ -1,5 +1,7 @@
-#ifndef ZMPT101B_h
-#define ZMPT101B_h
+#pragma once
+
+#include <stdint.h>
+#include <Arduino.h>
 
 #define DEFAULT_FREQUENCY 50.0f
 #define DEFAULT_SENSITIVITY 500.0f
@@ -15,6 +17,9 @@
 	#define VREF 3.3
 #endif
 
+namespace esphome {
+namespace zmpt101b_ns {
+
 class ZMPT101B
 {
 public:
@@ -29,4 +34,5 @@ private:
 	int 	 getZeroPoint();
 };
 
-#endif
+}
+}
