@@ -1,5 +1,4 @@
 #include "esphome.h"
-#include <Arduino.h>
 #include "zmpt101b.h"
 
 #define SENSITIVITY 509.0f
