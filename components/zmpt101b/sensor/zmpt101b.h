@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <Arduino.h>
 
-#define DEFAULT_FREQUENCY 50.0f
+#define DEFAULT_FREQUENCY 60.0f
 #define DEFAULT_SENSITIVITY 500.0f
 
 #if defined(AVR)
