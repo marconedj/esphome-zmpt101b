@@ -1,8 +1,15 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import sensor
-from esphome.const import CONF_ID
-
+from esphome.const import (
+    CONF_ID,
+    CONF_PIN,
+    CONF_VOLTAGE,
+    DEVICE_CLASS_VOLTAGE,
+    STATE_CLASS_MEASUREMENT,
+    UNIT_VOLT,
+    ICON_FLASH,
+)
 sensor_ns = cg.esphome_ns.namespace('zmpt101b_ns')
 
 Zmpt101bSensor = sensor_ns.class_('ZMPT101BSensor', cg.PollingComponent)
